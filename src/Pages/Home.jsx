@@ -44,15 +44,16 @@ function Home() {
           alignItems: "center",
         }}
       >
-        <Stack direction="column" spacing={3}>
-          <Typography variant="h3" color="#ffff">
-            Student suggestion portal
-          </Typography>
-
-          <Button variant="contained" onClick={onRuleDialog}>
+        <Box sx={{ p: 2, mb: 2 }}>
+          <Stack direction="column" spacing={3}>
+            <Typography variant="h3" color="#ffff">
+              Student suggestion portal
+            </Typography>
+          </Stack>
+          <Button variant="contained" sx={{mt:3}}onClick={onRuleDialog}>
             Give a Suggestion
           </Button>
-        </Stack>
+        </Box>
         <Dialog open={openRuleDialog} onClose={oncloseDialog}>
           <DialogTitle>Agree to the terms</DialogTitle>
           <DialogContent>
@@ -60,7 +61,10 @@ function Home() {
             Topics allowed
           </DialogContent>
           <DialogActions>
-            <Button variant="contained" onClick={() => navigate(`/StudentDetailPage`)}>
+            <Button
+              variant="contained"
+              onClick={() => navigate(`/StudentDetailPage`)}
+            >
               agree
             </Button>
             <Button variant="contained" onClick={oncloseDialog}>

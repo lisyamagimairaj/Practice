@@ -39,9 +39,9 @@ function NavBar() {
           </Typography>
           <Typography
             sx={{ cursor: "pointer" }}
-            onClick={() => navigate(`Works`)}
+            onClick={() => navigate(`Category`)}
           >
-            Works
+            Category
           </Typography>
           <Typography
             sx={{ cursor: "pointer" }}
