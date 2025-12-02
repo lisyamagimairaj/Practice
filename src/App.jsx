@@ -9,7 +9,7 @@ import NavBar from "./Components.ts/NavBar";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100" style={{ textAlign: "center" }}>
+    <div className="min-h-screen bg-gray-100" >
       <main className="container mx-auto">
         <NavBar />
         <div>
