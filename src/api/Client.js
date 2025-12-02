@@ -5,5 +5,10 @@ const api = axios.create({
 });
 
 export const backend = {
-  saveName: (text) => api.post("/save", { text }).then((r) => r.data),
+  saveName: (form) =>
+    api.post("/StudentDetailPage/details", { form: form }).then((r) => r.data),
+  saveContactName: (value1, value2) =>
+    api
+      .post("/Contact/save", { name: value1, Feedback: value2 })
+      .then((r) => r.data),
 };

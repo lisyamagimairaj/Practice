@@ -1,4 +1,3 @@
-
 import {
   Button,
   TextField,
@@ -23,7 +22,10 @@ function StudentDetailPage() {
 
   const submit = async (e) => {
     e.preventDefault();
-    const res = await backend.saveName(form);
+    const payload = {
+      ...form,
+    };
+    const res = await backend.saveName(payload);
     console.log(res);
     setForm({ studentId: "", department: "", Year: "" });
   };
@@ -34,7 +36,7 @@ function StudentDetailPage() {
 
   return (
     <Container maxWidth="md">
-      <Paper variant="outlined"  sx={{p: 2}}>
+      <Paper variant="outlined" sx={{ p: 2 }}>
         <Box component="form" onSubmit={submit} sx={{ p: 2 }}>
           <Typography variant="h4">Student Details</Typography>
 
