@@ -6,6 +6,7 @@ import Category from "./Pages/Category";
 import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./Components.ts/NavBar";
+import Infrastructure from "./Pages/Infrastructure";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/StudentDetailPage" element={<StudentDetailPage />} />
             <Route path="/Category" element={<Category />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/Infrastructure" element={<Infrastructure />} />
           </Routes>
         </div>
       </main>

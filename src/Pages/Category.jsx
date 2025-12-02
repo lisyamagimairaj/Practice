@@ -1,7 +1,7 @@
 import { Box, Button, MenuItem, TextField } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const cat = ["infrastructure", "canteen", "Hostel"];
+const cat = ["Infrastructure", "canteen", "Hostel"];
 function Category() {
   const navigate = useNavigate();
   const [selectCategory, setSelectCategory] = useState("");
