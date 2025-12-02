@@ -31,26 +31,12 @@ function Home() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box
-        sx={{
-          bgcolor: "rgba(0, 67, 45, 1)",
-          height: "100vh",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <Box sx={{ minHeight: "100vh", p: 3, mt: 8 ,}}>
         <Box sx={{ p: 2, mb: 2 }}>
           <Stack direction="column" spacing={3}>
-            <Typography variant="h3" color="#ffff">
-              Student suggestion portal
-            </Typography>
+            <Typography variant="h3">Student suggestion portal</Typography>
           </Stack>
-          <Button variant="contained" sx={{mt:3}}onClick={onRuleDialog}>
+          <Button variant="contained" sx={{ mt: 3 }} onClick={onRuleDialog}>
             Give a Suggestion
           </Button>
         </Box>
