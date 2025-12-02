@@ -21,7 +21,7 @@ function Contact() {
   };
 
   const onSend = async () => {
-    const sendname = await backend.saveContactName(name,feedback);
+    const sendname = await backend.saveContactName(name, feedback);
     console.log(sendname);
     setName("");
     setFeedback("");
@@ -34,10 +34,10 @@ function Contact() {
   return (
     <Container maxWidth="md">
       <Paper variant="outlined" sx={{ p: 5 }}>
-        <Typography variant="body2">give the Contact details</Typography>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Typography variant="body2">Suggestion</Typography>
+        <Box  sx={{ p: 2,}}>
           <TextField
-            label="add your contact name"
+            label="Name"
             variant="standard"
             fullWidth
             value={name}

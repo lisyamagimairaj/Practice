@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Home from "./Pages/Home";
 import StudentDetailPage from "./Pages/StudentDetailPage";
-import Works from "./Pages/Works";
+import Category from "./Pages/Category";
 import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./Components.ts/NavBar";
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/StudentDetailPage" element={<StudentDetailPage />} />
-            <Route path="/Works" element={<Works />} />
+            <Route path="/Category" element={<Category />} />
             <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
