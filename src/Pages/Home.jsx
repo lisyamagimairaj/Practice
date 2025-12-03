@@ -1,4 +1,3 @@
-import { DoneAll } from "@mui/icons-material";
 import {
   Container,
   Typography,
@@ -8,7 +7,6 @@ import {
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
 } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
