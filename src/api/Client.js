@@ -11,4 +11,11 @@ export const backend = {
     api
       .post("/Contact/save", { name: value1, Feedback: value2 })
       .then((r) => r.data),
+  saveInfraDetails: (subcat, issue) =>
+    api
+      .post("/Category/infrastructure", {
+        subcategory: subcat,
+        suggestion: issue,
+      })
+      .then((r) => r.data),
 };

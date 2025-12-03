@@ -15,5 +15,6 @@ mongoose
 
 app.use("/Contact", router);
 app.use("/StudentDetailPage", router);
+app.use("/Category", router);
 
 app.listen(5000, () => console.log("backend running on port 5000"));
