@@ -47,6 +47,7 @@ function StudentDetailPage() {
             variant="outlined"
             label="Student Id"
             fullWidth
+            required
             value={form.studentId}
             onChange={(e) => setForm({ ...form, studentId: e.target.value })}
             sx={{ mb: 2, mt: 1}}
@@ -57,6 +58,7 @@ function StudentDetailPage() {
             variant="outlined"
             label="Department"
             fullWidth
+            required
             value={form.department}
             onChange={(e) => setForm({ ...form, department: e.target.value })}
             sx={{ mb: 2, mt: 1 }}
@@ -73,6 +75,7 @@ function StudentDetailPage() {
             variant="outlined"
             label="Year"
             fullWidth
+            required
             value={form.Year}
             onChange={(e) => setForm({ ...form, Year: e.target.value })}
             sx={{ mb: 2, mt: 1 }}

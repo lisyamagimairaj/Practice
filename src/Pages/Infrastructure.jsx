@@ -16,7 +16,12 @@ function Infrastructure() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await backend.saveInfraDetails(selectSubcat, issue);
+    if (!selectSubcat.trim() || !issue.trim()) {
+      alert("pls fill the fields ");
+      return;
+    }
+    await 
+    backend.saveInfraDetails(selectSubcat, issue);
     setSelectSubCat("");
     setIssue("");
   };
@@ -31,6 +36,7 @@ function Infrastructure() {
           label="select the subcategory"
           fullWidth
           multiline
+          required
           value={selectSubcat}
           onChange={onSelectSub}
         >
@@ -43,11 +49,12 @@ function Infrastructure() {
         <TextField
           label="Explain your Issue"
           fullWidth
+          required
           value={issue}
           onChange={onTextIssue}
           multiline
         ></TextField>
-        <Button variant="contained" onClick={onSubmit}>
+        <Button variant="contained" onClick={onSubmit}sx={{width:"200px",alignSelf:"center"}}>
           Submit
         </Button>
       </Box>
