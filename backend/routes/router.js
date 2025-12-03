@@ -32,7 +32,7 @@ router.post("/details", async (req, res) => {
   }
 });
 
-router.post("/infrastructure/", async (req, res) => {
+router.post("/infrastructure", async (req, res) => {
   try {
     const data1 = new Suggestion({
       subcategory: req.body.subcategory,
