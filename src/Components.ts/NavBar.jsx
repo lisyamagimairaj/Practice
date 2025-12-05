@@ -27,7 +27,7 @@ function NavBar() {
         <Stack direction="row" spacing={4}>
           <Typography
             sx={{ cursor: "pointer" }}
-            onClick={() => navigate("/Home")}
+            onClick={() => navigate("/")}
           >
             Home
           </Typography>
